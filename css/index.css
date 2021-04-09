@@ -3,15 +3,18 @@
     padding: 0;
 }
 
-
+body{
+    position: relative;
+}
 
 .main-navbar{
     width:100%;
     background-color: rgba(32, 32, 26, 0.7);
     position: fixed;
-    /* top: 0; */
-    /* right: 0;   */
+    top:0;
+     right: 0;
 }
+
 .main-navbar__section{
     /* width:30%; */
     display: inline-block;
@@ -32,6 +35,7 @@
     display: flex;
     /* margin-top:10px; */
     float: right;
+    /* text-align: right; */
     margin-right: 3%;
     
 }
@@ -61,25 +65,27 @@
     background: rgba(0, 0, 0, 0.7)url(../images/pexels-pixabay-78791crop2.jpg);
     background-size: cover;
     background-blend-mode: darken;
-    height: 900px;
+    /* height: 900px; */
+    height: 100vh;
+    border-bottom: 10px solid rgb(251, 75, 11) ;
 }
 
-.box-main{
+.welcome__page{
     display: flex;
     justify-content: center;
     align-items: center;
-    color: white;
+    color: rgb(255, 255, 255);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     
 }
 
-.text-big{
-    font-family: cursive;
+.welcome-text__big{
+    font-family:sans-serif;
     text-align: center;
     font-size: 400%;
     margin-top: 300px;
 }
-.text-small{
+.welcome-text__small {
     text-align: center;
 }
 .typing {
@@ -94,13 +100,13 @@
 .buttons{
     text-align: center;
 } 
-.btn-book{
+.btn-book_now{
     transition: all .5s ease;
     font-weight: 600;
       border: 3px solid white;
       color: white;
       cursor: pointer;
-      background-color: transparent;
+      background-color: rgb(251, 75, 11);
       padding: 10px 20px;
       outline: none;
       border-radius: 4px;
@@ -108,17 +114,75 @@
       }
       
 
-.btn-book:hover {
-     color: rgb(17, 188, 255);
+.btn-book_now:hover {
+     color: rgb(19, 20, 20);
      background-color: rgba(255, 255, 255, 0.918);
 }
-.main-footer {
-    background-color: rgb(17, 188, 255);
+
+
+/*************************************  TRAVEL DESTINATIONS *****************************************/
+.travel-destinations{
+    margin-top: 70px;
+    
 }
-.main_footer__copy{
+.travel-destination__heading{
+    display: inline-block;
+    position: relative;
+    left: 200px;
+    font-family: serif;
+}
+.btn-browse_all{
+    transition: all .2s ease;
+    font-weight: 600;
+    border: 3px solid rgb(0, 0, 0);
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    background-color: transparent;
+    padding: 10px 20px;
+    outline: none;
+    border-radius: 4px;
+    float: right;
+    position: relative;
+    right:200px;
+    }
+
+.btn-browse_all:hover{
+        color: rgb(255, 255, 255);
+        background-color: rgba(0, 0, 0, 0.918);
+    }
+
+
+.travel-destinations__box{
+    padding :0;
+}
+.travel-destination__row{
+    
+}
+.travel-destination__element{
+    
+    text-align: center;
+    margin: 45px; 
+    border:3px solid black
+}
+.travel-destination__element p{
+    display: inline-block;
+    width: 30%;
+    color: tomato;
+    text-align: center;
+}
+
+
+/* FOOTER STARTS */
+.main-footer {
+    background-color: #575757;
+    
+}
+.main-footer__copy{
 font-size: 30px;
 text-align: center;
 }
+
+
 /* typing text */
 /* .typing {
     display: block;
