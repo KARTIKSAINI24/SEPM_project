@@ -3,29 +3,26 @@
     padding: 0;
 }
 
-body{
-    position: relative;
-}
-
 .main-navbar{
     width:100%;
     background-color: rgba(32, 32, 26, 0.7);
     position: fixed;
     top:0;
-     right: 0;
+    z-index: 100;
 }
 
 .main-navbar__section{
     /* width:30%; */
     display: inline-block;
-    margin: 7px 10px 7px 0px;
+    margin: 5px 10px 3px 0px;
     margin-left: 2%;
     vertical-align:middle;
 }
 .main-navbar__heading{
     color: rgb(255, 255, 255);
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    
+    font-family: sans-serif;
+    font-size: 2rem;
+    margin: 0;
 }
 
 
@@ -36,7 +33,9 @@ body{
     /* margin-top:10px; */
     float: right;
     /* text-align: right; */
+    margin: 0;
     margin-right: 3%;
+    
     
 }
 
@@ -68,12 +67,20 @@ body{
     /* height: 900px; */
     height: 100vh;
     border-bottom: 10px solid rgb(251, 75, 11) ;
+    /* position: relative; */
+    /* top: -200px; */
+    z-index: -100;
+    /* margin-top: 10px; */
+    padding-top: 1px;
+    box-sizing: content-box;
+    
 }
 
+
 .welcome__page{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
     color: rgb(255, 255, 255);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     
@@ -123,6 +130,7 @@ body{
 /*************************************  TRAVEL DESTINATIONS *****************************************/
 .travel-destinations{
     margin-top: 70px;
+    margin-bottom: 100px;
     
 }
 .travel-destination__heading{
@@ -151,25 +159,198 @@ body{
         background-color: rgba(0, 0, 0, 0.918);
     }
 
-
+.travel-destinations__header{
+    margin-bottom: 50px;
+}
 .travel-destinations__box{
+    /* margin-top: 100px; */
     padding :0;
 }
-.travel-destination__row{
+/* .travel-destination__row{
     
-}
+} */
 .travel-destination__element{
-    
     text-align: center;
     margin: 45px; 
-    border:3px solid black
+    /* border:1px solid rgb(212, 211, 211); */
+    border-top: none;
+    padding:0;
 }
-.travel-destination__element p{
+
+/* .travel-destination__element p{
     display: inline-block;
-    width: 30%;
+    width: 50%;
     color: tomato;
     text-align: center;
+} */
+
+.travel-destination__element__image{
+    width:100%;
+    height: 280px;
+    object-fit: cover;
+    box-sizing: border-box;
 }
+.travel-destination__element__heading{
+    border:1px solid rgb(212, 211, 211);
+    border-bottom: none;
+}
+
+.travel-destination__element__heading h1{
+margin: 10px;
+color: rgb(36, 35, 35);
+font-size: 1.4rem;
+display: inline-block;
+font-weight: normal;
+font-family: 'Mukta',sans-serif;
+margin-bottom: 0px;
+text-decoration: none;
+}
+
+
+.travel-destination__right-text{
+    position: relative;
+    left: 36px;
+    
+}
+.travel-destination__left-text{
+    
+    position: relative;
+    right: 36px;
+}
+/* tempry fixing the postion */
+.chennai_fix1{    
+    position: relative;
+    right: 50px;
+}
+.chennai_fix2{
+    position: relative;
+    right: 56px;
+}
+.kolkata_fix{
+    position: relative;
+    left: 48px;
+}
+
+.travel-destination__element__stations{
+    border:1px solid rgb(212, 211, 211);
+    border-top: none;
+
+}
+
+.travel-destination__element__text_price{
+    border:1px solid rgb(212, 211, 211);
+    border-top: none;
+    border-bottom: 1.3px solid rgb(212, 211, 211);
+}
+
+.travel-destination__element__stations h5{
+    font-size: 0.9rem;
+    font-weight: lighter;
+    display: inline-block;
+    color: black;
+    text-decoration: none;
+    /* margin-top: 0px; */
+}
+  /* fixing postions railway station names */
+.bandra1{
+    position: relative;
+    right: 70px;
+}
+
+.NDLS1{
+    position: relative;
+    left:40px;
+}
+
+.SBC{
+    position: relative;
+    right: 70px;
+
+}
+.MMCT{
+    position: relative;
+    left:80px;
+
+}
+.Hazrat{
+    position: relative;
+    right: 20px;
+
+}
+.chennaicentral{
+    position: relative;
+    left:25px;
+
+}
+
+.Egmore{
+position: relative;
+right: 65px;
+}
+
+.Shalimar{
+position: relative;
+left:73px;
+}
+
+.NDLS2{
+position: relative;
+right: 20px;
+}
+.Ahmedabad{
+position: relative;
+left:60px;
+}
+
+.chennai-central{
+position: relative;
+right: 30px;
+}
+
+.Trivandrum{
+    position: relative;
+    left:30px;
+}
+
+
+.travel-destination__element__from-text{
+    font-size: 1rem;
+    /* vertical-align: top; */
+    
+    color: black;
+}
+.travel-destination__element__price{
+        font-size: 2rem;
+        color: rgb(251, 75, 11);
+        
+
+}
+
+
+/* creating that box a link */
+.travel-destination__link{
+text-decoration: none;
+list-style-type: none;
+
+}
+.travel-destination__link:hover{
+text-decoration: none;
+list-style-type: none;
+box-shadow: 10px 10px 5px grey;
+}
+.travel-destination__element:hover{
+
+    transition: all 0.15s cubic-bezier(0.4, 0, 1, 1);
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), */
+    /* 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    
+
+
+}
+
 
 
 /* FOOTER STARTS */

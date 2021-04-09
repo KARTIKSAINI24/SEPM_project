@@ -5,22 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Railway reservation</title>
-    <!-- bootstrap link -->
-    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" -->
-        <!-- integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous"> -->
-        <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-</head> -->
+
+
+
+<!-- font links -->
+
+
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Mukta:wght@300;400&display=swap" rel="stylesheet">
+   
+
+<!-- bootstrap link -->
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 <body >
     <!-- navbars -->
-    <div class='background'>
         <!-- navbars div -->
-
+        <div class="background">
         <div class="main-navbar">
-            <section class="main-navbar__section">
+            <div class="main-navbar__section">
                 <h1 class="main-navbar__heading">BOOK <span style="color: rgb(251, 75, 11);"> MY</span> TRAIN</h1>
-                </section>
+            </div>
             <ul class="nav-list">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
@@ -40,49 +46,152 @@
                 </div>
             </div>
         </div>
-    </div>
-
+        </div>
+    
     <!-- Travel Destinations -->
 
 <div class="travel-destinations">
-    <h1 class="travel-destination__heading">TOP TRAVEL DESTINATION</h1>
-    <button class="btn-browse_all">Browse All</button>
-        <div class="travel-destinations__box container ">
+    <div class="travel-destinations__header">
+        <h1 class="travel-destination__heading">TOP TRAVEL DESTINATIONS</h1>
+        <button class="btn-browse_all">Browse All</button>
+    </div>
+    
+    <div class="travel-destinations__box container ">
         <div class="travel-destination__row row">
+            <a href=" " class="travel-destination__link">
             <div class="travel-destination__element col">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius quaerat laborum expedita quisquam molestias debitis! .</p>
+                <div class="travel-destination__image_conatiner">
+                    <img class="travel-destination__element__image" src="../images/Dellhi_img.jpg" alt="Delhi"> 
+                </div>
+                <div class="travel-destination__element__heading">
+                    <h1 class="travel-destination__left-text">Mumbai</h1>
+                    <h1 class="travel-destination__right-text">New delhi</h1>
+                </div>
+                <div class="travel-destination__element__stations">
+                    <h5 class="bandra1">Bandra Station</h5>
+                    <h5 class="NDLS1">NDLS<h5>
+                </div>
+                <div class="travel-destination__element__text_price">
+                    <h3 class="travel-destination__element__from-text">From <span class="travel-destination__element__price">999&#8377</span></h3>
+                </div>
+                </a>
+                
+                
             </div>
             <div class="travel-destination__element col">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius quaerat laborum expedita quisquam molestias debitis!</p>
+                <a href="" class="travel-destination__link">
+                <div class="travel-destination__image_conatiner">
+                    <img class="travel-destination__element__image" src="../images/mumbai_img3.jpg" alt="Mumbai"> 
+                </div>
+                <div class="travel-destination__element__heading">
+                    <h1 class="travel-destination__left-text">Banglore</h1>
+                    <h1 class="travel-destination__right-text">Mumbai</h1>
+                </div>
+                <div class="travel-destination__element__stations">
+                    <h5 class="SBC">SBC</h5>
+                    <h5 class="MMCT">MMCT<h5>
+                </div>
+                   <div class="travel-destination__element__text_price">
+                    <h3 class="travel-destination__element__from-text">From <span class="travel-destination__element__price">699&#8377</span></h3>
+                </div> 
+                </a>
             </div>
+
+
             <div class="travel-destination__element col">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius quaerat laborum expedita quisquam molestias debitis!</p>
+                <a href="" class="travel-destination__link">
+                <div class="travel-destination__image_conatiner">
+                    <img class="travel-destination__element__image" src="../images/chennai_img.jpg" alt="Mumbai"> 
+                </div>
+                <div class="travel-destination__element__heading">
+                    <h1 class="travel-destination__left-text">New Delhi</h1>
+                    <h1 class="travel-destination__right-text">Chennai</h1>
+                </div>
+                <div class="travel-destination__element__stations">
+                    <h5 class="Hazrat">Hazrat Nizamuddin RS</h5>
+                    <h5 class="chennaicentral">Chennai Central<h5>
+                </div>
+                <div class="travel-destination__element__text_price">
+                    <h3 class="travel-destination__element__from-text">From <span class="travel-destination__element__price">499&#8377</span></h3>
+                </div>
+                </a>
             </div>
-            </div>
-            </div>
-        <div class="travel-destinations__box container ">
+        </div>
+    </div>
+
+    <!-- TRAVEL destination 2nd column -->
+    <div class="travel-destinations__box container ">
         <div class="travel-destination__row row">
+            <a href="" class="travel-destination__link">
             <div class="travel-destination__element col">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius quaerat laborum expedita quisquam molestias debitis! .</p>
+                <div class="travel-destination__image_conatiner">
+                    <img class="travel-destination__element__image" src="../images/Howrah-Bridge.jpg" alt="KOLKATA"> 
+                </div>
+                <div class="travel-destination__element__heading">
+                    <h1 class="travel-destination__left-text chennai_fix1">Chennai</h1>
+                    <h1 class="travel-destination__right-text kolkata_fix">Kolkata</h1>
+                </div>
+                <div class="travel-destination__element__stations">
+                    <h5 class="Egmore">Egmore</h5>
+                    <h5 class="Shalimar">Shalimar RS<h5>
+                </div>
+                <div class="travel-destination__element__text_price">
+                    <h3 class="travel-destination__element__from-text">From <span class="travel-destination__element__price">635&#8377</span></h3>
+                </div>
+                </a>
             </div>
+
+
             <div class="travel-destination__element col">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius quaerat laborum expedita quisquam molestias debitis!</p>
+                <a href="" class="travel-destination__link">
+                <div class="travel-destination__image_conatiner">
+                    <img class="travel-destination__element__image" src="../images/SOMNATH.jpg" alt="GUJRAT"> 
+                </div>
+                <div class="travel-destination__element__heading">
+                    <h1 class="travel-destination__left-text">New Delhi</h1>
+                    <h1 class="travel-destination__right-text">GUJRAT</h1>
+                </div>
+                <div class="travel-destination__element__stations">
+                    <h5 class="NDLS2">NDLS</h5>
+                    <h5 class="Ahmedabad">Ahmedabad Junction<h5>
+                </div>
+                <div class="travel-destination__element__text_price">
+                    <h3 class="travel-destination__element__from-text">From <span class="travel-destination__element__price">890&#8377</span></h3>
+                </div>
+                </a>
             </div>
+
+
             <div class="travel-destination__element col">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius quaerat laborum expedita quisquam molestias debitis!</p>
+                <a href="" class="travel-destination__link">
+                <div class="travel-destination__image_conatiner">
+                    <img class="travel-destination__element__image" src="../images/kerala3.jpg" alt="KERALA"> 
+                </div>
+                <div class="travel-destination__element__heading">
+                    <h1 class="travel-destination__left-text chennai_fix2">Chennai</h1>
+                    <h1 class="travel-destination__right-text">Kerala</h1>
+                </div>
+                <div class="travel-destination__element__stations">
+                    <h5 class="chennai-central">Chennai Central</h5>
+                    <h5 class="Trivandrum" >Trivandrum Central	<h5>
+                </div>
+                <div class="travel-destination__element__text_price">
+                    <h3 class="travel-destination__element__from-text">From <span class="travel-destination__element__price">678&#8377</span></h3>
+                </div>
+                </a>
             </div>
-            </div>
-            </div>
+        </div>
+    </div>
         </div>
 </div>
     
 
 <h1>hello</h1>
-<!-- footer starts -->
+<footer starts 
    
  <div class="main-footer">
         <h1 class="main-footer__copy">Copyright &copy; 2021</h1>
-    </div>
+    </div> 
 </body>
 <link rel="stylesheet" href="../css/index.css">
 <script src="../js/index.js"></script>
