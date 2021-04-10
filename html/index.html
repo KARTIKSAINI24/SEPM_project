@@ -4,8 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <title>Railway reservation</title>
 
+    <!-- importing typed.js -->
+    <script src="../modules/typed.js-master/lib/typed.min.js"></script>
 
 
 <!-- font links -->
@@ -19,6 +22,9 @@
 
 <!-- bootstrap link -->
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+
+
 <body >
     <!-- navbars -->
         <!-- navbars div -->
@@ -39,8 +45,9 @@
         <div class="welcome__page">
             <div class="welcome-page__text">
                 <p class="welcome-text__big">WELCOME TO BOOK MY TRAIN</p>
-                <p class="welcome-text__small">We saves your time both while purchasing,the check in and during the travel</p>
-                <!-- <h1 class="typing">LOREM</h1> -->
+                <!-- <p class="welcome-text__small">We saves your time both while purchasing,the check in and during the travel</p> -->
+                <h4 class="welcome-text__small">What are you planning next?</h4>
+                <h1 class="typing_locations"></h1>
                 <div class="buttons">
                     <button class="btn-book_now">Book Now</button>
                 </div>
@@ -48,7 +55,7 @@
         </div>
         </div>
     
-    <!-- Travel Destinations -->
+    <!--------------------------- Travel Destinations --------------------------------->
 
 <div class="travel-destinations">
     <div class="travel-destinations__header">
@@ -184,15 +191,117 @@
     </div>
         </div>
 </div>
-    
+    <!-- -------------------------Middle image----------------------------------------------------- -->
 
-<h1>hello</h1>
-<footer starts 
-   
- <div class="main-footer">
+
+    <div class="advantages_section">
+        <div class="advantages_image">
+            <div class="container">
+                <div class="row">
+                    
+
+
+                        <div class="col-sm">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod placeat, obcaecati fugit laboriosam ullam velit?</p>
+                        </div>
+                        <div class="col-sm">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod placeat, obcaecati fugit laboriosam ullam velit?</p>
+                        </div>
+                        <div class="col-sm">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod placeat, obcaecati fugit laboriosam ullam velit?</p>
+                        </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+<!---------------------------------- Testimonials ---------------------------------------------------->
+
+<div class="testimonials-clean">
+        <div class="container">
+            <div class="intro">
+                <h2 class="text-center">Testimonials </h2>
+                <p class="text-center">Our customers love us! Read what they have to say below. Aliquam sed justo ligula. Vestibulum nibh erat, pellentesque ut laoreet vitae.</p>
+            </div>
+            <div class="row people">
+                <div class="col-md-6 col-lg-4 item">
+                    <div class="box">
+                        <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida. Aliquam varius finibus est.</p>
+                    </div>
+                    <div class="author"><img class="rounded-circle" src="/../images/unnamed.jpg">
+                        <h5 class="name">Ben Johnson</h5>
+                        <p class="title">CEO of Company Inc.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 item">
+                    <div class="box">
+                        <p class="description">Praesent aliquam in tellus eu gravida. Aliquam varius finibus est, et interdum justo suscipit id.</p>
+                    </div>
+                    <div class="author"><img class="rounded-circle" src="../images/GettyImages-500394316.jpg">
+                        <h5 class="name">Carl Kent</h5>
+                        <p class="title">Founder of Style Co.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 item">
+                    <div class="box">
+                        <p class="description">Aliquam varius finibus est, et interdum justo suscipit. Vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu.</p>
+                    </div>
+                    <div class="author"><img class="rounded-circle" src="../images/Faces-400x400px-1_1_18-scalia-testimonial.jpg">
+                        <h5 class="name">Emily Clark</h5>
+                        <p class="title">Owner of Creative Ltd.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+<!-- <div class="main-footer">
         <h1 class="main-footer__copy">Copyright &copy; 2021</h1>
-    </div> 
+    </div>  -->
+
+    
+<body>
+    <div class="footer-dark">
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 col-md-3 item">
+                        <h3>Services</h3>
+                        <ul>
+                            <li><a href="#">Ticket Booking</a></li>
+                            <li><a href="#">Luxury Vacationst</a></li>
+                            <!-- <li><a href="#">Hosting</a></li> -->
+                        </ul>
+                    </div>
+                    <div class="col-sm-6 col-md-3 item">
+                        <h3>About</h3>
+                        <ul>
+                            <li><a href="#">Company</a></li>
+                            <li><a href="#">Team</a></li>
+                            <li><a href="#">Careers</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6 item text">
+                        <h3 style= "color :rgb(251, 75, 11)";>Book My Train</h3>
+                        <p>Praesent sed lobortis mi. Suspendisse vel placerat ligula. Vivamus ac sem lacus. Ut vehicula rhoncus elementum. Etiam quis tristique lectus. Aliquam in arcu eget velit pulvinar dictum vel in justo.</p>
+                    </div>
+                    <div class="col item social"><a href="#"><i class="icon ion-social-facebook"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-instagram"></i></a></div>
+                </div>
+                <p class="copyright">BookMytrain © 2021</p>
+            </div>
+        </footer>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+
 </body>
+
+
 <link rel="stylesheet" href="../css/index.css">
 <script src="../js/index.js"></script>
 </html>

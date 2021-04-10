@@ -1,12 +1,7 @@
-// var Typed = require('typed.min.js');
+let typed = new Typed(".typing_locations", {
+    strings: ["Chennai?", "Mumbai?", "Dehradun?", "New Delhi?","Gujrat?"],
+    typeSpeed: 100,
+    backSpeed: 60,
+    loop: true,
+  });
 
-// let typed = new Typed(".typing", {
-//     strings: ["DEHRADUN", "This typing animation is very easy.", "You can easily make animation like this.", "And don't forget to Follow Me.","Thanks!"],
-//     typeSpeed: 100,
-//     backSpeed: 60,
-//     loop: true,
-//   });
-
-// .btn-book{
-//   addEventListener()
-// }
