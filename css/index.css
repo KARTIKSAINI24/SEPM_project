@@ -11,6 +11,7 @@
 
 .main-navbar{
     width:100%;
+    height: 52px;
     background-color: rgba(32, 32, 26, 0.7);
     position: fixed;
     top:0;
@@ -20,15 +21,21 @@
 .main-navbar__section{
     /* width:30%; */
     display: inline-block;
-    margin: 5px 10px 3px 0px;
+    margin: 7px 10px 3px 0px;
     margin-left: 2%;
-    vertical-align:middle;
+    vertical-align:top;
 }
 .main-navbar__heading{
     color: rgb(255, 255, 255);
     font-family: sans-serif;
     font-size: 2rem;
     margin: 0;
+}
+
+.flaticon-train{
+    display: inline-block;
+    font-size:40px;
+    color: rgb(251, 75, 11);
 }
 
 
@@ -94,23 +101,63 @@
 }
 
 .welcome-text__big{
-    font-family:sans-serif;
-    text-align: center;
+    font-family:'Train One',cursive;
+    text-align: left;
     font-size: 400%;
     margin-top: 250px;
+    margin-left: 100px;
     margin-bottom: 0;
+    display: inline-block;
 }
-.welcome-text__small {
-    text-align: center;
-    margin-top:50px;
+.welcome-text__small{
+    font-size: 1.2rem;
+    display: inline-block;
+    margin: 0 20px 20px 20px;
+    position: relative;
+    left: 80px;
+}
+
+.right_background__header{
+
+    background:rgba(0, 0, 0, 0.294);
+    position: relative;
+    top:100px;
+    /* border: 3px white solid; */
+    border-right: none;
+    padding: 100px 120px 214px 120px;
+    float: right;
+    top: 200px;
+
+}
+.planning-text__header {
+    
+
+    margin-left:30px;
+    font-size: 2.5rem;
+    display: block;
+    text-align: right;
+    background:
+    /* position: relative; */
+    /* left: 200px; */
+    /* bottom: 148px; */
+    
     
 }
+.typed-cursor{
+    visibility: hidden;
+}
+
 /* typing text */
 .typing_locations{
-    display: block;
+    display: inline-block;
     color: rgb(251, 75, 11);
     text-align: center;
-    font-size: 3.5rem;
+    font-size: 4.5rem;
+    margin-left: 10px;
+    position: relative;
+    /* bottom:44px; */
+    /* top:30px; */
+    left:30px;
 }
 
 .typing_locations::after{
@@ -132,29 +179,28 @@
         opacity: 0;
     }
 }
-.places{
-    text-align: center;
-    font-size: 350%;
-}
+
 .buttons{
     text-align: center;
 } 
-.btn-book_now{
-    transition: all .5s ease;
-    font-weight: 600;
-      border: 3px solid white;
-      color: white;
-      cursor: pointer;
-      background-color: transparent;
-      padding: 10px 20px;
-      outline: none;
-      border-radius: 4px;
-      margin-top: 15px;
+.btn-sign{
+    transition: all .2s ease;
+    font-weight: bold;
+    border: 3px solid white;
+    color: white;
+    cursor: pointer;
+    background-color: transparent;
+    padding: 10px 20px;
+    outline: none;
+    border-radius: 4px;
+    margin: 20px;
+      
+    
       }
       
 
-.btn-book_now:hover {
-     color: rgb(19, 20, 20);
+.btn-sign:hover {
+     color: rgb(0, 0, 0);
      background-color: rgba(255, 255, 255, 0.918);
 }
 
@@ -393,6 +439,63 @@ box-shadow: 10px 10px 5px grey;
     box-sizing: content-box;
 
 }
+
+.E_ticket_text{
+    color: rgb(255, 255, 255);
+    font-family: 'Karla',sans-serif;
+    text-align: center;
+    font-size: 3.5rem;
+    margin: 31px;
+    margin-bottom: 60px;
+}
+
+.advantages-element{
+    text-align: center; 
+
+}
+.advantages-element p{
+    text-align: center;
+    color: white;
+    font-size: 1rem;
+    width: 60%;
+    position: relative;
+    left: 66px;
+    top: 17px;
+    margin-top: 20px
+}
+
+
+.advantages-icon__box{
+    display: inline-block;
+    background:white;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    
+
+}
+.flaticon-flash{
+    color: rgb(251, 75, 11);
+    font-size: 60px;
+    position: relative;
+    top: 13px;
+}
+.flaticon-globe{
+    color: rgb(251, 75, 11);
+    font-size: 65px;
+    font-weight: lighter;
+    position: relative;
+    top: 7px;
+}
+
+.flaticon-documents{
+    color: rgb(251, 75, 11);
+    font-size: 74px;
+    position: relative;
+    top: 3px;
+}
+
+
 
 /***************************TEstimonials *********************************************/
 .testimonials-clean {

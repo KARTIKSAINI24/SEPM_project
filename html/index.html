@@ -7,7 +7,7 @@
     
     <title>Railway reservation</title>
 
-    <!-- importing typed.js -->
+<!-- importing typed.js -->
     <script src="../modules/typed.js-master/lib/typed.min.js"></script>
 
 
@@ -18,12 +18,22 @@
 <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500&display=swap" rel="stylesheet">
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@300;400&display=swap" rel="stylesheet">
-   
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Karla&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Train+One&display=swap" rel="stylesheet">
 
 <!-- bootstrap link -->
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
 
+
+<!-- flaticon moudle -->
+<link rel="stylesheet" type="text/css" href="../flaticon/font/flaticon.css">
+
+
+<!--  font awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
 <body >
     <!-- navbars -->
@@ -32,7 +42,9 @@
         <div class="main-navbar">
             <div class="main-navbar__section">
                 <h1 class="main-navbar__heading">BOOK <span style="color: rgb(251, 75, 11);"> MY</span> TRAIN</h1>
+                
             </div>
+            <i class="flaticon-train"></i>
             <ul class="nav-list">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
@@ -44,13 +56,18 @@
         <!-- centre text started -->
         <div class="welcome__page">
             <div class="welcome-page__text">
-                <p class="welcome-text__big">WELCOME TO BOOK MY TRAIN</p>
+                <p class="welcome-text__big">WELCOME TO <br>BOOK <span style="color: rgb(251, 75, 11);">MY</span> TRAIN</p>
                 <!-- <p class="welcome-text__small">We saves your time both while purchasing,the check in and during the travel</p> -->
-                <h4 class="welcome-text__small">What are you planning next?</h4>
+                <div class="right_background__header">
+                <h4 class="planning-text__header">What are you planning next?</h4>
                 <h1 class="typing_locations"></h1>
                 <div class="buttons">
-                    <button class="btn-book_now">Book Now</button>
+                    <button class="btn-sign signup">Sign Up</button>
+                    <button class="btn-sign signin">Sign in</button>
                 </div>
+                
+                </div>
+                <p class="welcome-text__small">We save your time both while purchasing,<br> check in and during the travel.</p>
             </div>
         </div>
         </div>
@@ -126,6 +143,8 @@
         </div>
     </div>
 
+
+
     <!-- TRAVEL destination 2nd column -->
     <div class="travel-destinations__box container ">
         <div class="travel-destination__row row">
@@ -191,32 +210,50 @@
     </div>
         </div>
 </div>
+
+
+
+
     <!-- -------------------------Middle image----------------------------------------------------- -->
+
+
+
 
 
     <div class="advantages_section">
         <div class="advantages_image">
+            <div class="">
+                    <h1 class="E_ticket_text">Why Book With Us?</h1>
+            </div>
             <div class="container">
+                
                 <div class="row">
                     
-
-
-                        <div class="col-sm">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod placeat, obcaecati fugit laboriosam ullam velit?</p>
+                        <div class="advantages-element col-sm">
+                            <div class="advantages-icon__box"><i class="flaticon-globe"></i></div>
+                            <p>All you need is internet to book your tickets.Book tickets anyhwere form Inida just from your phone</p>
                         </div>
-                        <div class="col-sm">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod placeat, obcaecati fugit laboriosam ullam velit?</p>
+                        <div class="advantages-element col-sm">
+                            <div class="advantages-icon__box"><i class="flaticon-flash"></i></div>
+                            <p>With us you can book tickets just with few clicks.now enjoy booking tickets superfast with us</p>
                         </div>
-                        <div class="col-sm">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod placeat, obcaecati fugit laboriosam ullam velit?</p>
+                        
+                        <div class="advantages-element col-sm">
+                            <div class="advantages-icon__box"><i class="flaticon-documents"></i></div>
+                            <p>No need to carry those tickets that you always misplace, now you can carry your ticket in your mobile phone</p>
                         </div>
-
-
                 </div>
             </div>
-        </div>
+            </div>
+        
     </div>
+
+
+
 <!---------------------------------- Testimonials ---------------------------------------------------->
+
+
+
 
 <div class="testimonials-clean">
         <div class="container">
