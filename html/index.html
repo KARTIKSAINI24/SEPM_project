@@ -34,8 +34,12 @@
 
 <!--  font awesome -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
 <body >
+
+
+
     <!-- navbars -->
         <!-- navbars div -->
         <div class="background">
@@ -62,8 +66,8 @@
                 <h4 class="planning-text__header">What are you planning next?</h4>
                 <h1 class="typing_locations"></h1>
                 <div class="buttons">
-                    <button class="btn-sign signup">Sign Up</button>
-                    <button class="btn-sign signin">Sign in</button>
+                    <button id= "sign-up-Btn" class="btn-sign">Sign Up</button>
+                    <button id ="sign-in-Btn" class="btn-sign signin">Sign in</button>
                 </div>
                 
                 </div>
@@ -72,6 +76,45 @@
         </div>
         </div>
     
+<!------------------------------------creating modal ---------------------------------------------->
+
+<div class="signup-modal">
+    <a class="sign-up-close-link"><i class="fa fa-times" id="sign-up-close"></i></a>
+    <div>
+        <h1 class="sign-up-heading">Sign Up</h1>
+    </div>
+    
+    <form>
+  <div class="form-row">
+    <div class="col">
+      <input type="text" class="form-control " placeholder="First name">
+    </div>
+    <div class="col">
+      <input type="text" class="form-control" placeholder="Last name">
+    </div>
+  </div>
+  <div class="form-row">
+    <div class="col">
+      <input type="email" class="form-control " placeholder="Email">
+    </div>
+    
+  </div>
+  <div class="form-row"><div class="col">
+      <input type="password" class="form-control" placeholder="password">
+    </div>
+</div>
+<button type="submit" class="btn btn-dark">Submit</button>
+<div>
+    <label for="already-member" class="already-member">Already a member? <a href="" class="sign-in-link">sign in</a></label>
+    
+</div>
+</form>
+
+</div>
+
+
+
+
     <!--------------------------- Travel Destinations --------------------------------->
 
 <div class="travel-destinations">
@@ -136,7 +179,7 @@
                     <h5 class="chennaicentral">Chennai Central<h5>
                 </div>
                 <div class="travel-destination__element__text_price">
-                    <h3 class="travel-destination__element__from-text">From <span class="travel-destination__element__price">499&#8377</span></h3>
+                    <h3 class="travel-destination__element__from-text">From <span class="travel-destination__element__price">2999&#8377</span></h3>
                 </div>
                 </a>
             </div>
@@ -311,7 +354,7 @@
                         <h3>Services</h3>
                         <ul>
                             <li><a href="#">Ticket Booking</a></li>
-                            <li><a href="#">Luxury Vacationst</a></li>
+                            <li><a href="#">Luxury Vacations</a></li>
                             <!-- <li><a href="#">Hosting</a></li> -->
                         </ul>
                     </div>
@@ -333,12 +376,19 @@
             </div>
         </footer>
     </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+    
+
+
 
 </body>
 
 
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
 <link rel="stylesheet" href="../css/index.css">
 <script src="../js/index.js"></script>
 </html>
