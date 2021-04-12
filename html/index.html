@@ -67,7 +67,7 @@
                 <h1 class="typing_locations"></h1>
                 <div class="buttons">
                     <button id= "sign-up-Btn" class="btn-sign">Sign Up</button>
-                    <button id ="sign-in-Btn" class="btn-sign signin">Sign in</button>
+                    <button id ="sign-in-Btn" class="btn-sign">Sign in</button>
                 </div>
                 
                 </div>
@@ -76,10 +76,11 @@
         </div>
         </div>
     
-<!------------------------------------creating modal ---------------------------------------------->
+<!------------------------------------Sign Up modal ---------------------------------------------->
 
-<div class="signup-modal">
-    <a class="sign-up-close-link"><i class="fa fa-times" id="sign-up-close"></i></a>
+<div class="modal-bg signup">
+<div class = "signup-modal">
+    <a class="sign-up-close-link modal-close-link"><i class="fa fa-times" id="sign-up-close"></i></a>
     <div>
         <h1 class="sign-up-heading">Sign Up</h1>
     </div>
@@ -103,17 +104,40 @@
       <input type="password" class="form-control" placeholder="password">
     </div>
 </div>
-<button type="submit" class="btn btn-dark">Submit</button>
+<button type="submit" class="btn btn-dark">Sign Up</button>
 <div>
-    <label for="already-member" class="already-member">Already a member? <a href="" class="sign-in-link">sign in</a></label>
+    <label for="already-member" class="already-member">Already a member? <button type="button" class="btn btn-link sign-in-switch">Sign in</button></label>
     
 </div>
 </form>
 
 </div>
+</div>
 
 
+<!-- ----------------------------------------Sign in modal-------------------- -->
+<div class="modal-bg signin" id="signinclick">
+<div class = "signup-modal">
+    <a class="sign-in-close-link modal-close-link"><i class="fa fa-times" id="sign-up-close"></i></a>
+    <div>
+        <h1 class="sign-up-heading">Sign In</h1>
+    </div>
+    <form>
+  <div class="form-row">
+      <input type="email" class="form-control " placeholder="Email">
+  </div>
 
+  <div class="form-row">
+      <input type="password" class="form-control " placeholder="password">
+  </div>
+  <button type="submit" class="btn btn-dark">Sign In</button>
+<div>
+    <label for="already-member" class="already-member">Not a member? <button type="button" class="btn btn-link sign-up-switch">Sign Up</button></label>
+    
+</div>
+</form>
+    </div>
+</div>
 
     <!--------------------------- Travel Destinations --------------------------------->
 

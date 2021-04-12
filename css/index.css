@@ -596,16 +596,7 @@ box-shadow: 10px 10px 5px grey;
 }
 
 /******************************* FOOTER STARTS **********************************************/
-/* .main-footer {
-    background-color: #000000;
-    height: 3rem;
-    
-}
-.main-footer__copy{
-font-size: 1rem;
-text-align: center;
-color: white;
-} */
+
 
 .footer-dark {
     padding: 50px 0;
@@ -700,21 +691,38 @@ color: white;
 
 /* ******************************************  Sign Up modal*************************** */
 
+
+.modal-bg{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background:rgba(0, 0, 0, 0.5);
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.5s;
+    z-index: 1000;
+}
+.bg-active{
+    visibility: visible;
+    opacity: 1;
+}
+
 .signup-modal{
-    display: none;
+    /* display: none; */
     background: white;
     text-align: center;
     width: 400px;
-    position: absolute;
+    position: fixed;
     left: 50%;
     top:30%;
     margin-left: -200px;
     padding: 15px 40px 20px 40px;
     border-radius: 10px;
     border:2px solid var(--brand-color);
-
+    z-index: 999;
 }
-
 
 .sign-up-heading{
     margin-bottom: 20px;
@@ -722,19 +730,20 @@ color: white;
     display: inline-block;
 
 }
-.sign-up-close-link{
+.modal-close-link{
     position: relative;
     left: 55%;
+
 }
 #sign-up-close{
-    font-size:20px;
+    font-size:30px;
     color:red;
     /* float: right; */
     
 }
 #sign-up-close:hover {
     cursor: pointer;
-    font-size:20px;
+    /* font-size:20px; */
     color:rgb(0, 0, 0);
 }
 .form-row{
@@ -752,5 +761,17 @@ color: white;
 .already-member{
     margin-top: 20px;
 }
+.btn-link{
+font-weight: 400;
+color: #007bff;
+background-color: transparent;
+margin: 0;
+padding: 0;
+border: 0;
+position: relative;
+top: -2px;
+right: -2px;
+}
+
 
 

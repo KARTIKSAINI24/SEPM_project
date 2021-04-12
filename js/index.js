@@ -5,48 +5,55 @@ let typed = new Typed(".typing_locations", {
     loop: true,
   });
 
-// ************************************** creating modal *****************************
+// ************************************** signup/signin modal *****************************
 
-// var signup_modal = document.querySelector("#signup-modal")
 
-// document.getElementById("sign-up-Btn").onclick = function(){
-    
-//     console.log('sign up')
-//     signup_modal.style.display = "none";
+var sign_up_modal = document.getElementsByClassName("signup")[0]
+var sign_in_modal = document.getElementsByClassName("signin")[0]
+var signup_close_link = document.querySelector(".sign-up-close-link")
+var signin_close_link = document.querySelector(".sign-in-close-link")
 
-// }
+// sign up/sign in switch buttons
+var signin_switch = document.querySelector(".sign-in-switch")
+var signup_switch = document.querySelector(".sign-up-switch")
 
-// var modal_card = document.querySelector(".row")
 
-// window.onclick = function(event) {
-//     console.log("out")
-//    if (event.target == signup_modal) {
-//      signup_modal.style.display = "none";
-//    }
-// }
+// sign up button
+document.getElementById("sign-up-Btn").addEventListener("click",function(){
+    sign_up_modal.classList.add('bg-active')
 
-//   // Get the modal
-// var modal = document.getElementById("myModal");
+})
 
-// // Get the button that opens the modal
-// var btn = document.getElementById("sign-up-Btn");
+// sign in button
+document.getElementById("sign-in-Btn").addEventListener("click",function(){
+    sign_in_modal.classList.add('bg-active')
 
-// // Get the <span> element that closes the modal
-// var span = document.getElementsByClassName("close")[0];
+})
 
-// // When the user clicks on the button, open the modal
-// btn.onclick = function() {
-//   modal.style.display = "block";
-// }
+// sign up close button
+signup_close_link.addEventListener("click",function(event){ 
+    sign_up_modal.classList.remove('bg-active')
+});
 
-// // When the user clicks on <span> (x), close the modal
-// span.onclick = function() {
-//   modal.style.display = "none";
-// }
+// sign in close button
+signin_close_link.addEventListener("click",function(event){
+  
+    sign_in_modal.classList.remove('bg-active')
+});
 
-// // When the user clicks anywhere outside of the modal, close it
-// window.onclick = function(event) {
-//   if (event.target == modal) {
-//     modal.style.display = "none";
-//   }
-// } 
+// sign in switch
+signin_switch.addEventListener("click", function(){
+    sign_up_modal.classList.remove('bg-active')
+    sign_in_modal.classList.add('bg-active')
+
+})
+
+// sign up switch
+signup_switch.addEventListener("click", function(){
+    sign_in_modal.classList.remove('bg-active')
+    sign_up_modal.classList.add('bg-active')
+
+})
+
+
+
