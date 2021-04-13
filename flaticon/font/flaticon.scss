@@ -2,11 +2,11 @@ $flaticon-font: "flaticon";
 
 @font-face {
     font-family: $flaticon-font;
-    src: url("./flaticon.ttf?80e4079a136866dc9c7df230291abf55") format("truetype"),
-url("./flaticon.woff?80e4079a136866dc9c7df230291abf55") format("woff"),
-url("./flaticon.woff2?80e4079a136866dc9c7df230291abf55") format("woff2"),
-url("./flaticon.eot?80e4079a136866dc9c7df230291abf55#iefix") format("embedded-opentype"),
-url("./flaticon.svg?80e4079a136866dc9c7df230291abf55#flaticon") format("svg");
+    src: url("./flaticon.ttf?275e66005ff9f61e2ec90b6c262ddd3d") format("truetype"),
+url("./flaticon.woff?275e66005ff9f61e2ec90b6c262ddd3d") format("woff"),
+url("./flaticon.woff2?275e66005ff9f61e2ec90b6c262ddd3d") format("woff2"),
+url("./flaticon.eot?275e66005ff9f61e2ec90b6c262ddd3d#iefix") format("embedded-opentype"),
+url("./flaticon.svg?275e66005ff9f61e2ec90b6c262ddd3d#flaticon") format("svg");
 }
 
 i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
@@ -25,8 +25,10 @@ $flaticon-map: (
     "flash": "\f102",
     "globe": "\f103",
     "online": "\f104",
-    "train": "\f105",
-    "underground": "\f106",
+    "train-3": "\f105",
+    "train": "\f106",
+    "underground-1": "\f107",
+    "underground": "\f108",
 );
 
 .flaticon-documents:before {
@@ -41,8 +43,14 @@ $flaticon-map: (
 .flaticon-online:before {
     content: map-get($flaticon-map, "online");
 }
+.flaticon-train-3:before {
+    content: map-get($flaticon-map, "train-3");
+}
 .flaticon-train:before {
     content: map-get($flaticon-map, "train");
+}
+.flaticon-underground-1:before {
+    content: map-get($flaticon-map, "underground-1");
 }
 .flaticon-underground:before {
     content: map-get($flaticon-map, "underground");

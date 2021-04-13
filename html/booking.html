@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Booking</title>
+
+<!-- importing typed.js -->
+    <script src="../modules/typed.js-master/lib/typed.min.js"></script>
+
+
+<!-- font links -->
+
+
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Mukta:wght@300;400&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Karla&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Train+One&display=swap" rel="stylesheet">
+
+<!-- bootstrap link -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+
+
+<!-- flaticon moudle -->
+<link rel="stylesheet" type="text/css" href="../flaticon/font/flaticon.css">
+
+
+<!--  font awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+
+ <!-- jquery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  
+</head>
+<body>
+    
+
+    <div class="main-navbar">
+            <div class="main-navbar__section">
+                <h1 class="main-navbar__heading">BOOK <span style="color: rgb(251, 75, 11);"> MY</span> TRAIN</h1>
+                
+            </div>
+            <i class="flaticon-train"></i>
+            <ul class="nav-list">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#serives">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#Login">Login</a></li>
+            </ul>
+        </div>
+
+
+        <!----------------------------------content starts ---------------------------------------->
+
+
+
+        <div class="background-booking">
+            <div class="form-background">
+            <form>
+                <div class="row">
+                    <div class="col-5 ml-4 mt-2">
+                        <label class= "col-form-label" for="formGroupExampleInput" >Travelling Route</label>
+                    </div>
+                    <div class="col-4  mt-2 mr-5">
+                        <label class= "col-form-label" for="formGroupExampleInput" >Travelling Date</label>
+                    </div>
+                    <div class="col-auto mr-4 mt-2" style="position: relative;right: 2%;">
+                        <label class= "col-form-label" for="formGroupExampleInput" >Travelling Persons </label>
+                    </div>
+                </div> 
+                <div class="form-row">
+                    <div class="col ml-4 mr-2">
+                        <div class="input-group">
+                        <input type="text" class="form-control train_forms" placeholder="From">
+                        <div class="input-group-prepend">
+                        <span class="input-group-text fa fa-map-marker fa-7x input_group_icons"  ></span>
+                            </div>   
+                        </div>
+                    </div>
+                    <div class="col-auto mx-2">
+                    <button type="button" class="btn btn-light"><i class="fa fa-refresh" id=""></i></button>
+                    </div>
+                     <div class="col mx-2">
+                        <div class="input-group">
+                        <input type="text" class="form-control train_forms" placeholder="To">
+                        <div class="input-group-prepend">
+                        <span class="input-group-text fa fa-map-marker fa-7x input_group_icons" ></span>
+                            </div>   
+                        </div>
+                    </div>
+                     <div class="col mx-2">
+                        <div class="input-group">
+                        <input type="text" class="form-control train_forms" id="datepicker" placeholder="Date">
+                        <div class="input-group-prepend">
+                        <span class="input-group-text fa fa-calendar fa-7x input_group_icons"  ></span>
+                            </div>   
+                        </div>
+                    </div>
+                     <div class="col mx-2">
+                        <div class="input-group">
+                        <input type="text" class="form-control train_forms" placeholder="One-way">
+                        <div class="input-group-prepend">
+                        <span class="input-group-text fa fa-calendar fa-7x input_group_icons"  ></span>
+                            </div>   
+                        </div>
+                    </div>
+                     <div class="col ml-2 mr-4">
+                        <div class="input-group">
+                        <input type="number" class="form-control train_forms" placeholder="No. of people">
+                        <div class="input-group-prepend">
+                        <span class="input-group-text fa fa-user fa-7x input_group_icons"  ></span>
+                            </div>   
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="row">
+                    <div class="col mt-4 mr-4">
+                        <button class="btn btn-primray float-right search-tickets-btn">Search Tickets</button></div>
+                </div>
+                
+            </form>
+            
+        </div>
+        </div>
+
+
+      <!----------------------------------train details------------------------------- -->
+
+<div class="container mt-5">
+    <div class="card">
+        <div class="row train_timing_row">
+
+            <div class="col-2 train_icon_column" >
+                <div class="train_icon_backgorund">
+                    <i class="flaticon-train-3"></i>
+                </div>
+                <div>
+                    <p class="train_number">12443</p>
+                    <p class="train_name">Rajdhani Express</p>
+                </div>
+            </div>
+
+            <div class="col-8">
+                
+                <div class="row  align-items-center train_timing_column">
+                    
+                    <div class="col" style="text-align:center;">
+                        <h4 class="train-time train_time_departure">6:00PM</h4>
+                        <p>April 15</p>
+                        <p class="train_station_place">New Delhi</p>
+                        <p class="train_station_name">NDLS</p>
+                        <p></p>
+                    </div>
+                    <div class="col" style="text-align: center; color:rgb(161, 153, 150);">
+                          <h5>32 hrs</h5>
+                          <i class="fas fa-long-arrow-alt-right" style="font-size: 50px;"></i>
+                          
+                    </div>
+                    
+                    <div class="col" style="text-align: center;">
+                        <h4 class="train-time train_time_arrival" >2:00AM</h4>    
+                        <p>April 17</p>
+                        <p class="train_station_place">Chennai</p>
+                        <p class="train_station_name">Chennai Central</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+            
+            <div class="col-2">
+                <div class="train_price_column">
+                    <h4 style="color: rgb(251, 75, 11);font-size: xx-large;">2599 <span>&#8377</span><span><sub style="color: rgb(167, 164, 167);font-size: small;">/person</sub></span></h4>
+                    <button class="btn btn-primary train_book_btn">Book now</button>
+               </div>
+            </div>
+        
+        </div>
+    </div>
+</div>
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+
+<!-- ----------------------------------footer------------------------------------------------ -->
+  <div class="footer-dark">
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 col-md-3 item">
+                        <h3>Services</h3>
+                        <ul>
+                            <li><a href="#">Ticket Booking</a></li>
+                            <li><a href="#">Luxury Vacations</a></li>
+                            
+                        </ul>
+                    </div>
+                    <div class="col-sm-6 col-md-3 item">
+                        <h3>About</h3>
+                        <ul>
+                            <li><a href="#">Company</a></li>
+                            <li><a href="#">Team</a></li>
+                            <li><a href="#">Careers</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6 item text">
+                        <h3 style= "color :rgb(251, 75, 11)";>Book My Train</h3>
+                        <p>Praesent sed lobortis mi. Suspendisse vel placerat ligula. Vivamus ac sem lacus. Ut vehicula rhoncus elementum. Etiam quis tristique lectus. Aliquam in arcu eget velit pulvinar dictum vel in justo.</p>
+                    </div>
+                    <div class="col item social"><a href="#"><i class="icon ion-social-facebook"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-instagram"></i></a></div>
+                </div>
+                <p class="copyright">BookMytrain © 2021</p>
+            </div>
+        </footer>
+    </div> 
+     
+
+
+
+</body>
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script> 
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+<link rel="stylesheet" href="../css/booking.css">
+<script src="../js/booking.js"></script>
+</html>

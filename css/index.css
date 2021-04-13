@@ -139,13 +139,12 @@
     font-size: 2.5rem;
     display: block;
     text-align: right;
-    background:
+    /* background: */
     /* position: relative; */
     /* left: 200px; */
     /* bottom: 148px; */
-    
-    
 }
+
 .typed-cursor{
     visibility: hidden;
 }
