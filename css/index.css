@@ -750,11 +750,18 @@ box-shadow: 10px 10px 5px grey;
     margin-top: 15px;
     text-align: center;
 }
-.btn-dark{
+
+.signup_signin_btn{
     background: var(--brand-color);
-    border: 0;
+    border: 1px solid white;
     width: 100%;
     margin-top: 20px;
+}
+.signup_signin_btn:hover{
+  background: white;
+  color: rgb(251, 75, 11);
+  border: 1px solid rgb(251, 75, 11);
+  /* border-style: inset; */
 }
 
 .already-member{
