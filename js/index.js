@@ -1,5 +1,5 @@
 let typed = new Typed(".typing_locations", {
-    strings: ["Chennai?", "Mumbai?", "Dehradun?", "New Delhi?","Gujrat?","Uttarakhand?","Goa?","Varanasi?"],
+    strings: ["Chennai?", "Mumbai?", "Dehradun?", "New Delhi?","Gujrat?","Kashmir?","Uttarakhand?","Goa?","Varanasi?"],
     typeSpeed: 100,
     backSpeed: 60,
     loop: true,
@@ -64,14 +64,16 @@ signup_switch.addEventListener("click", function(){
 var sign_up_booking = document.querySelector(".signup_btn_booking")
 var sign_in_booking = document.querySelector(".signin_btn_booking")
 
-sign_up_booking.addEventListener("click",function(){
+sign_up_booking.addEventListener("click",function(e){
     console.log("helll")
-    window.open('../html/booking.html', '_blank');
+    window.location.replace('../html/booking.html');
+    e.preventDefault();
    
 })
-sign_in_booking.addEventListener("click",function(){
+sign_in_booking.addEventListener("click",function(e){
     console.log("helll")
-    window.open('../html/booking.html', '_blank');
+    window.location.replace('../html/booking.html');
+    e.preventDefault();
    
 })
 
