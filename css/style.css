@@ -77,7 +77,7 @@
 
 
 .background{
-    background: rgba(0, 0, 0, 0.7)url(../images/pexels-pixabay-78791crop2.jpg);
+    background: rgba(0, 0, 0, 0.7)url(pexels-pixabay-78791crop2.jpg);
     background-size: cover;
     background-position: center;
     background-blend-mode: darken;
@@ -430,7 +430,7 @@ box-shadow: 10px 10px 5px grey;
 /* *****************************************advantages************************************/
 
 .advantages_image{
-    background: rgba(255, 75, 9, 0.657)url("../images/railway-overlay.jpg");
+    background: rgba(255, 75, 9, 0.657)url("railway-overlay.jpg");
     background-size: cover;
     background-position:10px;
     background-blend-mode: lighten;

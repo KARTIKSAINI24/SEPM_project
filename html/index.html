@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="content-Security-Policy">
     
     <title>Railway reservation</title>
 
 <!-- importing typed.js -->
-    <script src="../modules/typed.js-master/lib/typed.min.js"></script>
+    <script src="typed.js-master/lib/typed.min.js"></script>
 
 
 <!-- font links -->
@@ -29,7 +30,7 @@
 
 
 <!-- flaticon moudle -->
-<link rel="stylesheet" type="text/css" href="../flaticon/font/flaticon.css">
+<link rel="stylesheet" type="text/css" href="font/flaticon.css">
 
 
 <!--  font awesome -->
@@ -85,23 +86,23 @@
         <h1 class="sign-up-heading">Sign Up</h1>
     </div>
     
-    <form>
+    <form class="needs-validation" novalidate>
   <div class="form-row">
     <div class="col">
-      <input type="text" class="form-control " placeholder="First name">
+      <input type="text" class="form-control " placeholder="First name" required>
     </div>
     <div class="col">
-      <input type="text" class="form-control" placeholder="Last name">
+      <input type="text" class="form-control" placeholder="Last name" required>
     </div>
   </div>
   <div class="form-row">
     <div class="col">
-      <input type="email" class="form-control " placeholder="Email">
+      <input type="email" class="form-control " placeholder="Email" required>
     </div>
     
   </div>
   <div class="form-row"><div class="col">
-      <input type="password" class="form-control" placeholder="password">
+      <input type="password" class="form-control" placeholder="password" required>
     </div>
 </div>
     <button type="submit"  class="btn btn-dark signup_btn_booking signup_signin_btn">Sign Up</button>
@@ -123,12 +124,12 @@
         <h1 class="sign-up-heading">Sign In</h1>
     </div>
     <form>
-  <div class="form-row">
-      <input type="email" class="form-control " placeholder="Email">
-  </div>
+        <div class="form-row">
+        <input type="email" class="form-control " placeholder="Email" required>
+        </div>
 
   <div class="form-row">
-      <input type="password" class="form-control " placeholder="password">
+      <input type="password" class="form-control " placeholder="password" required>
   </div>
   <button type="submit"  class="btn btn-dark signin_btn_booking signup_signin_btn">Sign In</button>
 <div>
@@ -152,7 +153,7 @@
             <a href=" " class="travel-destination__link">
             <div class="travel-destination__element col">
                 <div class="travel-destination__image_conatiner">
-                    <img class="travel-destination__element__image" src="../images/Dellhi_img.jpg" alt="Delhi"> 
+                    <img class="travel-destination__element__image" src="Dellhi_img.jpg" alt="Delhi"> 
                 </div>
                 <div class="travel-destination__element__heading">
                     <h1 class="travel-destination__left-text">Mumbai</h1>
@@ -172,7 +173,7 @@
             <div class="travel-destination__element col">
                 <a href="" class="travel-destination__link">
                 <div class="travel-destination__image_conatiner">
-                    <img class="travel-destination__element__image" src="../images/mumbai_img3.jpg" alt="Mumbai"> 
+                    <img class="travel-destination__element__image" src="mumbai_img3.jpg" alt="Mumbai"> 
                 </div>
                 <div class="travel-destination__element__heading">
                     <h1 class="travel-destination__left-text">Banglore</h1>
@@ -192,7 +193,7 @@
             <div class="travel-destination__element col">
                 <a href="" class="travel-destination__link">
                 <div class="travel-destination__image_conatiner">
-                    <img class="travel-destination__element__image" src="../images/chennai_img.jpg" alt="Mumbai"> 
+                    <img class="travel-destination__element__image" src="chennai_img.jpg" alt="Mumbai"> 
                 </div>
                 <div class="travel-destination__element__heading">
                     <h1 class="travel-destination__left-text">New Delhi</h1>
@@ -218,7 +219,7 @@
             <a href="" class="travel-destination__link">
             <div class="travel-destination__element col">
                 <div class="travel-destination__image_conatiner">
-                    <img class="travel-destination__element__image" src="../images/Howrah-Bridge.jpg" alt="KOLKATA"> 
+                    <img class="travel-destination__element__image" src="Howrah-Bridge.jpg" alt="KOLKATA"> 
                 </div>
                 <div class="travel-destination__element__heading">
                     <h1 class="travel-destination__left-text chennai_fix1">Chennai</h1>
@@ -238,7 +239,7 @@
             <div class="travel-destination__element col">
                 <a href="" class="travel-destination__link">
                 <div class="travel-destination__image_conatiner">
-                    <img class="travel-destination__element__image" src="../images/SOMNATH.jpg" alt="GUJRAT"> 
+                    <img class="travel-destination__element__image" src="SOMNATH.jpg" alt="GUJRAT"> 
                 </div>
                 <div class="travel-destination__element__heading">
                     <h1 class="travel-destination__left-text">New Delhi</h1>
@@ -258,7 +259,7 @@
             <div class="travel-destination__element col">
                 <a href="" class="travel-destination__link">
                 <div class="travel-destination__image_conatiner">
-                    <img class="travel-destination__element__image" src="../images/kerala3.jpg" alt="KERALA"> 
+                    <img class="travel-destination__element__image" src="kerala3.jpg" alt="KERALA"> 
                 </div>
                 <div class="travel-destination__element__heading">
                     <h1 class="travel-destination__left-text chennai_fix2">Chennai</h1>
@@ -333,7 +334,7 @@
                     <div class="box">
                         <p class="description">I travel from my hometown,gujrat to my college which is in chennai , in this pandemic I have to book my tickets urgently and book my train offerd me great services at a very low price</p>
                     </div>
-                    <div class="author"><img class="rounded-circle" src="../images/Annotation 2021-04-05 102831.png">
+                    <div class="author"><img class="rounded-circle" src="Annotation 2021-04-05 102831.png">
                         <h5 class="name">Aakash Susai</h5>
                         <p class="title">Student at SRM</p>
                     </div>
@@ -342,7 +343,7 @@
                     <div class="box">
                         <p class="description">I have made a huge profit while travelling with book my train and selling my special tea.Very friendly staff and well sanitized washrooms</p>
                     </div>
-                    <div class="author"><img class="rounded-circle" src="../images/Screenshot_20201009-142608.jpg">
+                    <div class="author"><img class="rounded-circle" src="Screenshot_20201009-142608.jpg">
                         <h5 class="name">Shubhankar Mechu</h5>
                         <p class="title">Vendor of Java tea stall</p>
                     </div>
@@ -351,7 +352,7 @@
                     <div class="box">
                         <p class="description">With book my train it is very easy carry my luggage from Delhi to chennai at a very cheap price which is not possible by air.Thanks for making my journey fun and enthusiastic</p>
                     </div>
-                    <div class="author"><img class="rounded-circle" src="../images/Screenshot_20200822-225342.png">
+                    <div class="author"><img class="rounded-circle" src="Screenshot_20200822-225342.png">
                         <h5 class="name">Rathee</h5>
                         <p class="title">Youtuber</p>
                     </div>
@@ -413,6 +414,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
         integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
         crossorigin="anonymous"></script>
-<link rel="stylesheet" href="../css/index.css">
-<script src="../js/index.js"></script>
+<link rel="stylesheet" href="style.css">
+<script src="index.js"></script>
 </html>
