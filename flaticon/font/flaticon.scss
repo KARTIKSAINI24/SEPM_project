@@ -2,11 +2,11 @@ $flaticon-font: "flaticon";
 
 @font-face {
     font-family: $flaticon-font;
-    src: url("./flaticon.ttf?275e66005ff9f61e2ec90b6c262ddd3d") format("truetype"),
-url("./flaticon.woff?275e66005ff9f61e2ec90b6c262ddd3d") format("woff"),
-url("./flaticon.woff2?275e66005ff9f61e2ec90b6c262ddd3d") format("woff2"),
-url("./flaticon.eot?275e66005ff9f61e2ec90b6c262ddd3d#iefix") format("embedded-opentype"),
-url("./flaticon.svg?275e66005ff9f61e2ec90b6c262ddd3d#flaticon") format("svg");
+    src: url("./flaticon.ttf?a0748738c09aa43f5f3ba6016a3617bf") format("truetype"),
+url("./flaticon.woff?a0748738c09aa43f5f3ba6016a3617bf") format("woff"),
+url("./flaticon.woff2?a0748738c09aa43f5f3ba6016a3617bf") format("woff2"),
+url("./flaticon.eot?a0748738c09aa43f5f3ba6016a3617bf#iefix") format("embedded-opentype"),
+url("./flaticon.svg?a0748738c09aa43f5f3ba6016a3617bf#flaticon") format("svg");
 }
 
 i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
@@ -21,30 +21,34 @@ i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
 }
 
 $flaticon-map: (
-    "documents": "\f101",
+    "globe": "\f101",
     "flash": "\f102",
-    "globe": "\f103",
-    "online": "\f104",
-    "train-3": "\f105",
+    "online": "\f103",
+    "documents": "\f104",
+    "underground": "\f105",
     "train": "\f106",
     "underground-1": "\f107",
-    "underground": "\f108",
+    "train-3": "\f108",
+    "credit-card": "\f109",
+    "mail": "\f10a",
+    "park-tickets-couple": "\f10b",
+    "driver-1": "\f10c",
 );
 
-.flaticon-documents:before {
-    content: map-get($flaticon-map, "documents");
+.flaticon-globe:before {
+    content: map-get($flaticon-map, "globe");
 }
 .flaticon-flash:before {
     content: map-get($flaticon-map, "flash");
 }
-.flaticon-globe:before {
-    content: map-get($flaticon-map, "globe");
-}
 .flaticon-online:before {
     content: map-get($flaticon-map, "online");
 }
-.flaticon-train-3:before {
-    content: map-get($flaticon-map, "train-3");
+.flaticon-documents:before {
+    content: map-get($flaticon-map, "documents");
+}
+.flaticon-underground:before {
+    content: map-get($flaticon-map, "underground");
 }
 .flaticon-train:before {
     content: map-get($flaticon-map, "train");
@@ -52,6 +56,18 @@ $flaticon-map: (
 .flaticon-underground-1:before {
     content: map-get($flaticon-map, "underground-1");
 }
-.flaticon-underground:before {
-    content: map-get($flaticon-map, "underground");
+.flaticon-train-3:before {
+    content: map-get($flaticon-map, "train-3");
+}
+.flaticon-credit-card:before {
+    content: map-get($flaticon-map, "credit-card");
+}
+.flaticon-mail:before {
+    content: map-get($flaticon-map, "mail");
+}
+.flaticon-park-tickets-couple:before {
+    content: map-get($flaticon-map, "park-tickets-couple");
+}
+.flaticon-driver-1:before {
+    content: map-get($flaticon-map, "driver-1");
 }

@@ -11,7 +11,7 @@ var validation = Array.prototype.filter.call(forms, function(form) {
           e.stopPropagation();
         }
         else{
-        window.location.replace('../html/payment.html')
+        window.location.replace('payment.html')
         e.preventDefault();
         }
         form.classList.add('was-validated');

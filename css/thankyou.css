@@ -1,0 +1,158 @@
+@import 'style.css';
+
+
+/* clearing styles */
+.form-row {
+    /* width:400px; */
+    margin-top: 15px;
+    text-align: unset;
+}
+
+.thankyou-bg{
+    background: rgba(0, 0, 0, 0.4)url(thankyou.jpg);
+    background-size: cover;
+    background-position: bottom;
+    background-blend-mode: darken;
+    border-bottom: 10px solid rgb(251, 75, 11);
+    position: relative;
+    height: 50vh;
+    padding-top: 1px;
+    box-sizing: content-box;
+}
+
+
+.heading-container{
+    position: relative;
+    top: 6rem;
+    /* left: 30rem; */
+    color: white;
+    text-align: center;
+    justify-content: center;
+}
+
+.payment-icon__container{
+    height: 100px;
+    width: 100px;
+    background-color:white;
+    border-radius: 50%;
+    background-clip: padding-box;
+    /* border:10px solid rgb(147 147 147 / 26%); */
+    margin: 0 auto;
+    box-sizing: content-box;
+}
+
+.flaticon-credit-card {
+    /* display: inline-block; */
+    color: rgb(47, 47, 47);
+    font-size: 53px;
+    position: relative;
+    top: 13px;
+    }
+
+
+
+
+.thankyou-heading{
+    /* font-family: 'Mukta',sans-serif; */
+    font-family: 'Karla',
+    sans-serif;
+    font-weight: bold;
+    font-size: 4rem;
+    margin:0;
+    margin-top: 0.5rem;
+
+}
+
+.thankyou-subheading{
+    font-size: 2rem;
+    font-weight: lighter;
+}
+.underline__subheading{
+    margin: 0 auto;
+    height: 0.5px;
+    width: 40%;
+    background: white;
+}
+
+
+/* ********************************      information section   ********************** */
+
+.instrcutions_section{
+    width: 70%;
+    margin: auto;
+    margin-top: 4rem;
+}
+
+
+.ticket-heading{
+    font-size: 2rem;
+}
+.instructions_container{
+    margin-top: 4rem;
+}
+.instructions-element {
+    text-align: center;
+
+}
+
+/* .instructions-element p {
+    text-align: center;
+    color: var(--brand-color);
+    font-size: 1rem;
+    width: 60%;
+    position: relative;
+    left: 66px;
+    top: 17px;
+    margin-top: 20px
+} */
+.instructions-icon__box + p {
+    text-align: center;
+    color: black;
+    font-size: 1.2rem;
+    /* font-weight: 400; */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 100%;
+    position: relative;
+    /* left: 66px; */
+    top: 17px;
+    margin-top: 0px
+}
+
+
+.instructions-icon__box {
+    display: inline-block;
+    background: var(--brand-color);
+    ;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+
+}
+/* icons */
+
+
+.flaticon-mail {
+    color: rgb(255, 255, 255);
+    font-size: 55px;
+    position: relative;
+    top: 13px;
+}
+.flaticon-park-tickets-couple{
+    color: white;
+    font-size: 60px;
+    position: relative;
+    top: 13px;
+}
+.flaticon-driver-1{
+    color: white;
+    font-size: 60px;
+    position: relative;
+    top: 10px;
+}
+
+.underline_icons{
+    height: 0.5px;
+    width: 50%;
+    background-color: rgb(116, 116, 116);
+    margin: 40px auto;
+}

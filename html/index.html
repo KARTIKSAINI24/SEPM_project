@@ -86,31 +86,35 @@
         <h1 class="sign-up-heading">Sign Up</h1>
     </div>
     
-    <form class="needs-validation" novalidate>
-  <div class="form-row">
-    <div class="col">
-      <input type="text" class="form-control " placeholder="First name" required>
-    </div>
-    <div class="col">
-      <input type="text" class="form-control" placeholder="Last name" required>
-    </div>
-  </div>
-  <div class="form-row">
-    <div class="col">
-      <input type="email" class="form-control " placeholder="Email" required>
-    </div>
-    
-  </div>
-  <div class="form-row"><div class="col">
-      <input type="password" class="form-control" placeholder="password" required>
-    </div>
-</div>
-    <button type="submit"  class="btn btn-dark signup_btn_booking signup_signin_btn">Sign Up</button>
-<div>
-    <label for="already-member" class="already-member">Already a member? <button type="button" class="btn btn-link sign-in-switch">Sign in</button></label>
-    
-</div>
-</form>
+    <form class="needs-validation" action="/sign_up" method="POST"  novalidate>
+        <div class="form-row">
+            <div class="col">
+            <input type="text" class="form-control " placeholder="First name" name="fname" required>
+            </div>
+            <div class="col">
+            <input type="text" class="form-control" placeholder="Last name" name="lname" required>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="col">
+            <input type="email" class="form-control " placeholder="Email" name="email" required>
+            </div>
+            
+        </div>
+        <div class="form-row"><div class="col">
+            <input type="password" class="form-control" placeholder="password" name="password" required>
+            </div>
+        </div>
+        <div class="form-row"><div class="col">
+            <input type="password" class="form-control" placeholder="confirm password" name="cpassword" required>
+            </div>
+        </div>
+            <button type="submit"  class="btn btn-dark signup_btn_booking signup_signin_btn">Sign Up</button>
+        <div>
+            <label for="already-member" class="already-member">Already a member? <button type="button" class="btn btn-link sign-in-switch">Sign in</button></label>
+            
+        </div>
+    </form>
 
 </div>
 </div>
@@ -123,19 +127,19 @@
     <div>
         <h1 class="sign-up-heading">Sign In</h1>
     </div>
-    <form>
+    <form class="needs-validation2" novalidate>
         <div class="form-row">
         <input type="email" class="form-control " placeholder="Email" required>
         </div>
 
-  <div class="form-row">
-      <input type="password" class="form-control " placeholder="password" required>
-  </div>
-  <button type="submit"  class="btn btn-dark signin_btn_booking signup_signin_btn">Sign In</button>
-<div>
-    <label for="already-member" class="already-member">Not a member? <button type="button" class="btn btn-link sign-up-switch">Sign Up</button></label>
-    
-</div>
+        <div class="form-row">
+            <input type="password" class="form-control " placeholder="password" required>
+        </div>
+        <button type="submit"  class="btn btn-dark signin_btn_booking signup_signin_btn">Sign In</button>
+        <div>
+            <label for="already-member" class="already-member">Not a member? <button type="button" class="btn btn-link sign-up-switch">Sign Up</button></label>
+            
+        </div>
 </form>
     </div>
 </div>

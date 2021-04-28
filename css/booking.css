@@ -10,11 +10,20 @@
     top: 0;
     z-index: 100; */
 }
+input[type="date"]::-webkit-calendar-picker-indicator {
+    color: rgb(236, 17, 17);
+    opacity: 1;
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-width: thin;
+}
+
 
 
 .background-booking{
     
-    background: rgba(0, 0, 0, 0.4)url(../images/booking-background.jpg);
+    background: rgba(0, 0, 0, 0.4)url(booking-background.jpg);
     background-size: cover;
     background-position: center;
     background-blend-mode: darken;
@@ -162,4 +171,14 @@
 
 .train_container{
     display: none;
+}
+
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    color: rgb(236, 17, 17);
+    opacity: 1;
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-width: thin;
 }

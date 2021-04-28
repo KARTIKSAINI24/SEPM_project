@@ -12,6 +12,9 @@ var forms = document.getElementsByClassName('needs-validation');
       }, false);
     });
   
+// btn2.addEventListener('click' , ()=>{
 
+//   console.log("clikked")
+// })
 
 

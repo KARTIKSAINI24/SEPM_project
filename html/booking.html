@@ -8,7 +8,7 @@
     <title>Booking</title>
 
 <!-- importing typed.js -->
-    <script src="../modules/typed.js-master/lib/typed.min.js"></script>
+    <script src="typed.js-master/lib/typed.min.js"></script>
 
 
 <!-- font links -->
@@ -29,7 +29,7 @@
 
 
 <!-- flaticon moudle -->
-<link rel="stylesheet" type="text/css" href="../flaticon/font/flaticon.css">
+<link rel="stylesheet" type="text/css" href="font/flaticon.css">
 
 
 <!--  font awesome -->
@@ -51,7 +51,7 @@
             </div>
             <i class="flaticon-train"></i>
             <ul class="nav-list">
-                <li><a href="../html/index.html">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#serives">Services</a></li>
                 <li><a href="#contact">Contact</a></li>
@@ -66,7 +66,7 @@
 
         <div class="background-booking">
             <div class="form-background">
-            <form>
+            <form class="needs-validation" novalidate>
                 <div class="row">
                     <div class="col-5 ml-4 mt-2">
                         <label class= "col-form-label" for="formGroupExampleInput" >Travelling Route</label>
@@ -79,9 +79,20 @@
                     </div>
                 </div> 
                 <div class="form-row">
-                    <div class="col ml-4 mr-2">
+                    <div class="col-2 ml-4 mr-2">
                         <div class="input-group">
-                        <input type="text" class="form-control train_forms" placeholder="From">
+                        <select put type="text" class="form-control train_forms" required>
+                            <option selected disabled value="">Select</option>
+                            <option value="Banglore">Banglore</option>
+                            <option value="Chennai">Chennai</option>
+                            <option value="Delhi">Delhi</option>
+                            <option value="Goa">Goa</option>
+                            <option value="Gujarat">Gujarat</option>
+                            <option value="Kerala">Kerala</option>
+                            <option value="Kolkata">Kolkata</option>
+                            <option value="Mumbai">Mumbai</option>
+                            </select>
+                            
                         <div class="input-group-prepend">
                         <span class="input-group-text fa fa-map-marker fa-7x input_group_icons"  ></span>
                             </div>   
@@ -90,33 +101,46 @@
                     <div class="col-auto mx-2">
                     <button type="button" class="btn btn-light"><i class="fa fa-refresh" id=""></i></button>
                     </div>
-                     <div class="col mx-2">
+                     <div class="col-2 mx-2">
                         <div class="input-group">
-                        <input type="text" class="form-control train_forms" placeholder="To">
+                        <select put type="text" class="form-control train_forms" required>
+                            <option selected disabled value="">Select</option>
+                            <option value="Banglore">Banglore</option>
+                            <option value="Chennai">Chennai</option>
+                            <option value="Delhi">Delhi</option>
+                            <option value="Goa">Goa</option>
+                            <option value="Gujarat">Gujarat</option>
+                            <option value="Kerala">Kerala</option>
+                            <option value="Kolkata">Kolkata</option>
+                            <option value="Mumbai">Mumbai</option>
+                            </select>
                         <div class="input-group-prepend">
                         <span class="input-group-text fa fa-map-marker fa-7x input_group_icons" ></span>
                             </div>   
                         </div>
                     </div>
-                     <div class="col mx-2">
+                     <div class="col-2 mx-2">
                         <div class="input-group">
-                        <input type="text" class="form-control train_forms" id="datepicker" placeholder="Date">
-                        <div class="input-group-prepend">
-                        <span class="input-group-text fa fa-calendar fa-7x input_group_icons"  ></span>
-                            </div>   
+                        <input type="date" class="form-control train_forms" id="datepicker" required>
+                      
                         </div>
                     </div>
-                     <div class="col mx-2">
+                     <div class="col-2 mx-2">
                         <div class="input-group">
-                        <input type="text" class="form-control train_forms" placeholder="One-way">
-                        <div class="input-group-prepend">
-                        <span class="input-group-text fa fa-calendar fa-7x input_group_icons"  ></span>
-                            </div>   
-                        </div>
+                        <input type="date" class="form-control train_forms">
+                        
+                        </div> 
                     </div>
-                     <div class="col ml-2 mr-4">
+                     <div class="col-auto ml-2">
                         <div class="input-group">
-                        <input type="number" class="form-control train_forms" placeholder="No. of people">
+                        
+                        <select put type="text" class="form-control train_forms" required>
+                            <option selected disabled value="">select</option>
+                            <option value="">1</option>
+                            <option value="">2</option>
+                            <option value="">3</option>
+                            <option value="">4</option>
+                        </select>
                         <div class="input-group-prepend">
                         <span class="input-group-text fa fa-user fa-7x input_group_icons"  ></span>
                             </div>   
@@ -126,7 +150,7 @@
                 </div>
                 <div class="row">
                     <div class="col mt-4 mr-4">
-                        <button class="btn btn-primray float-right search-tickets-btn">Search Tickets</button></div>
+                        <button class="btn btn-primray float-right search-tickets-btn" type="submit">Search Tickets</button></div>
                 </div>
                 
             </form>
@@ -190,6 +214,8 @@
         </div>
     </div>
 </div>
+
+
 <div class="container mt-5 train_container ">
     <div class="card">
         <div class="row train_timing_row">
@@ -388,6 +414,6 @@
      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
         integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
         crossorigin="anonymous"></script>
-<link rel="stylesheet" href="../css/booking.css">
-<script src="../js/booking.js"></script>
+<link rel="stylesheet" href="booking.css">
+<script src="booking.js"></script>
 </html>

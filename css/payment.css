@@ -11,7 +11,7 @@
 
 .background-payment{
 
-    background: rgba(0, 0, 0, 0.4)url(../images/payment-bg.jpg);
+    background: rgba(0, 0, 0, 0.4)url(payment-bg.jpg);
     background-size: cover;
     background-position: center;
     background-blend-mode: darken;
