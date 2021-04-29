@@ -10,14 +10,14 @@
     top: 0;
     z-index: 100; */
 }
-input[type="date"]::-webkit-calendar-picker-indicator {
+/* input[type="date"]::-webkit-calendar-picker-indicator {
     color: rgb(236, 17, 17);
     opacity: 1;
     display: block;
     width: 20px;
     height: 20px;
     border-width: thin;
-}
+} */
 
 
 
@@ -76,11 +76,6 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 .train_forms {
     border: none;
 }
-/* .location_marker:active,
-.location_marker:focus {
-    border: 2px solid chartreuse !important;
-    outline: none !important;
-} */
 
 /* **********************************   train details ****************************************/
 
@@ -174,11 +169,11 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 }
 
 
-input[type="date"]::-webkit-calendar-picker-indicator {
+/* input[type="date"]::-webkit-calendar-picker-indicator {
     color: rgb(236, 17, 17);
     opacity: 1;
     display: block;
     width: 20px;
     height: 20px;
     border-width: thin;
-}
+} */

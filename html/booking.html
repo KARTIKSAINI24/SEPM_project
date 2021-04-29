@@ -81,7 +81,7 @@
                 <div class="form-row">
                     <div class="col-2 ml-4 mr-2">
                         <div class="input-group">
-                        <select put type="text" class="form-control train_forms" required>
+                        <select put type="text" class="form-control train_forms train_departure_station" required>
                             <option selected disabled value="">Select</option>
                             <option value="Banglore">Banglore</option>
                             <option value="Chennai">Chennai</option>
@@ -103,7 +103,7 @@
                     </div>
                      <div class="col-2 mx-2">
                         <div class="input-group">
-                        <select put type="text" class="form-control train_forms" required>
+                        <select put type="text" class="form-control train_forms train_arrival_station" required>
                             <option selected disabled value="">Select</option>
                             <option value="Banglore">Banglore</option>
                             <option value="Chennai">Chennai</option>
@@ -121,7 +121,7 @@
                     </div>
                      <div class="col-2 mx-2">
                         <div class="input-group">
-                        <input type="date" class="form-control train_forms" id="datepicker" required>
+                        <input type="date" class="form-control train_forms departure_date_input" id="datepicker" required>
                       
                         </div>
                     </div>
@@ -153,13 +153,19 @@
                         <button class="btn btn-primray float-right search-tickets-btn" type="submit">Search Tickets</button></div>
                 </div>
                 
+                
             </form>
             
         </div>
         </div>
+        
 
 
       <!----------------------------------train details------------------------------- -->
+
+<!-- first column -->
+
+
 
 <div class="container mt-5 train_container">
     <div class="card">
@@ -181,22 +187,22 @@
                     
                     <div class="col" style="text-align:center;">
                         <h4 class="train-time train_time_departure">6:00PM</h4>
-                        <p>April 15</p>
-                        <p class="train_station_place">New Delhi</p>
-                        <p class="train_station_name">NDLS</p>
+                        <p class="departure_date_text">April 15</p>
+                        <p class="train_station_place train_departure_place__name">New Delhi</p>
+                        <!-- <p class="train_station_name">NDLS</p> -->
                         <p></p>
                     </div>
                     <div class="col" style="text-align: center; color:rgb(161, 153, 150);">
-                          <h5>32 hrs</h5>
+                          <h5>22 hrs</h5>
                           <i class="fas fa-long-arrow-alt-right" style="font-size: 50px;"></i>
                           
                     </div>
                     
                     <div class="col" style="text-align: center;">
-                        <h4 class="train-time train_time_arrival" >2:00AM</h4>    
-                        <p>April 17</p>
-                        <p class="train_station_place">Chennai</p>
-                        <p class="train_station_name">Chennai Central</p>
+                        <h4 class="train-time train_time_arrival" >4:00AM</h4>    
+                        <p class="arrival_date_text">April 16</p>
+                        <p class="train_station_place train_arrival_place__name">Chennai</p>
+                        <!-- <p class="train_station_name">Chennai Central</p> -->
 
                     </div>
 
@@ -214,6 +220,8 @@
         </div>
     </div>
 </div>
+
+<!--  column 2 -->
 
 
 <div class="container mt-5 train_container ">
@@ -236,9 +244,9 @@
                     
                     <div class="col" style="text-align:center;">
                         <h4 class="train-time train_time_departure">10:00PM</h4>
-                        <p>April 15</p>
-                        <p class="train_station_place">New Delhi</p>
-                        <p class="train_station_name">NDLS</p>
+                        <p class="departure_date_text">April 15</p>
+                        <p class="train_station_place train_departure_place__name">New Delhi</p>
+                        <!-- <p class="train_station_name">NDLS</p> -->
                         <p></p>
                     </div>
                     <div class="col" style="text-align: center; color:rgb(161, 153, 150);">
@@ -249,9 +257,9 @@
                     
                     <div class="col" style="text-align: center;">
                         <h4 class="train-time train_time_arrival" >10:00PM</h4>    
-                        <p>April 16</p>
-                        <p class="train_station_place">Chennai</p>
-                        <p class="train_station_name">Chennai Central</p>
+                        <p class="arrival_date_text">April 16</p>
+                        <p class="train_station_place train_arrival_place__name">Chennai</p>
+                        <!-- <p class="train_station_name">Chennai Central</p> -->
 
                     </div>
 
@@ -269,58 +277,60 @@
         </div>
     </div>
 </div>
-<div class="container mt-5 train_container">
-    <div class="card">
-        <div class="row train_timing_row">
 
-            <div class="col-2 train_icon_column" >
-                <div class="train_icon_backgorund">
-                    <i class="flaticon-train-3"></i>
-                </div>
-                <div>
-                    <p class="train_number">70343</p>
-                    <p class="train_name">Tamil Nadu Express</p>
-                </div>
-            </div>
+<!-- column 3 -->
+    <div class="container mt-5 train_container">
+        <div class="card">
+            <div class="row train_timing_row">
 
-            <div class="col-8">
+                <div class="col-2 train_icon_column" >
+                    <div class="train_icon_backgorund">
+                        <i class="flaticon-train-3"></i>
+                    </div>
+                    <div>
+                        <p class="train_number">70343</p>
+                        <p class="train_name">Humsafar Express</p>
+                    </div>
+                </div>
+
+                <div class="col-8">
+                    
+                    <div class="row  align-items-center train_timing_column">
+                        
+                        <div class="col" style="text-align:center;">
+                            <h4 class="train-time train_time_departure">6:00AM</h4>
+                            <p class="departure_date_text">April 15</p>
+                            <p class="train_station_place train_departure_place__name">New Delhi</p>
+                            <!-- <p class="train_station_name">NDLS</p> -->
+                            <p></p>
+                        </div>
+                        <div class="col" style="text-align: center; color:rgb(161, 153, 150);">
+                            <h5>26 hrs</h5>
+                            <i class="fas fa-long-arrow-alt-right" style="font-size: 50px;"></i>
+                            
+                        </div>
+                        
+                        <div class="col" style="text-align: center;">
+                            <h4 class="train-time train_time_arrival" >8:00PM</h4>    
+                            <p class="arrival_date_text">April 16</p>
+                            <p class="train_station_place train_arrival_place__name">Chennai</p>
+                            <!-- <p class="train_station_name">Chennai Central</p> -->
+
+                        </div>
+
+                    </div>
+
+                </div>
                 
-                <div class="row  align-items-center train_timing_column">
-                    
-                    <div class="col" style="text-align:center;">
-                        <h4 class="train-time train_time_departure">6:00AM</h4>
-                        <p>April 15</p>
-                        <p class="train_station_place">New Delhi</p>
-                        <p class="train_station_name">NDLS</p>
-                        <p></p>
-                    </div>
-                    <div class="col" style="text-align: center; color:rgb(161, 153, 150);">
-                          <h5>26 hrs</h5>
-                          <i class="fas fa-long-arrow-alt-right" style="font-size: 50px;"></i>
-                          
-                    </div>
-                    
-                    <div class="col" style="text-align: center;">
-                        <h4 class="train-time train_time_arrival" >8:00PM</h4>    
-                        <p>April 16</p>
-                        <p class="train_station_place">Chennai</p>
-                        <p class="train_station_name">Chennai Central</p>
-
-                    </div>
-
+                <div class="col-2">
+                    <div class="train_price_column">
+                        <h4 style="color: rgb(251, 75, 11);font-size: xx-large;">2599 <span>&#8377</span><span><sub style="color: rgb(167, 164, 167);font-size: small;">/person</sub></span></h4>
+                        <button class="btn btn-primary train_book_btn">Book now</button>
                 </div>
-
-            </div>
+                </div>
             
-            <div class="col-2">
-                <div class="train_price_column">
-                    <h4 style="color: rgb(251, 75, 11);font-size: xx-large;">2599 <span>&#8377</span><span><sub style="color: rgb(167, 164, 167);font-size: small;">/person</sub></span></h4>
-                    <button class="btn btn-primary train_book_btn">Book now</button>
-               </div>
             </div>
-        
         </div>
-    </div>
 </div>
 
 
