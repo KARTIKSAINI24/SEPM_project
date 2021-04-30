@@ -3,7 +3,7 @@
 
 
 let typed = new Typed(".typing_locations", {
-    strings: ["Chennai?", "Mumbai?", "Dehradun?", "New Delhi?","Gujrat?","Uttarakhand?","Goa?","Varanasi?"],
+    strings: ["Chennai?", "Mumbai?", "Banglore?", "New Delhi?","Gujrat?","Kerala?","Goa?","Kolkata?"],
     typeSpeed: 100,
     backSpeed: 60,
     loop: true,
@@ -70,12 +70,12 @@ var sign_in_booking = document.querySelector(".signin_btn_booking")
 //     e.preventDefault();
    
 // })
-// sign_in_booking.addEventListener("click",function(e){
-//     console.log("helll")
-//     window.location.replace('booking.html');
-//     e.preventDefault();
+sign_in_booking.addEventListener("click",function(e){
+    console.log("helll")
+    window.location.replace('booking.html');
+    e.preventDefault();
    
-// })
+})
 
 
 

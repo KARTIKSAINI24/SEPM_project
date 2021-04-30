@@ -99,7 +99,7 @@
                         </div>
                     </div>
                     <div class="col-auto mx-2">
-                    <button type="button" class="btn btn-light"><i class="fa fa-refresh" id=""></i></button>
+                    <button type="button" class="btn btn-light swap-button"><i class="fa fa-refresh" id=""></i></button>
                     </div>
                      <div class="col-2 mx-2">
                         <div class="input-group">
@@ -127,16 +127,26 @@
                     </div>
                      <div class="col-2 mx-2">
                         <div class="input-group">
-                        <input type="date" class="form-control train_forms">
-                        
+                        <select type="text" class="form-control train_forms">
+                            <option selected disabled value="">Train Type</option>
+                            <option value="">1AC</option>
+                            <option value="">SL</option>
+                            <option value="">SC</option>
+                            <option value="">FC</option>
+                            <option value="">EC</option>
+                        </select>
+                        <!-- <div class="input-group-prepend">
+                        <span class="input-group-text fa fa-user fa-7x input_group_icons"  ></span>
+                            </div>   
+                        </div> -->
                         </div> 
                     </div>
-                     <div class="col-auto ml-2">
+                     <div class="col-2 ml-2">
                         <div class="input-group">
-                        
+                        <!-- <label for="">Travelling people</label> -->
                         <select put type="text" class="form-control train_forms" required>
-                            <option selected disabled value="">select</option>
-                            <option value="">1</option>
+                            <!-- <option selected disabled value="">select</option> -->
+                            <option selected value="">1</option>
                             <option value="">2</option>
                             <option value="">3</option>
                             <option value="">4</option>
@@ -164,7 +174,9 @@
       <!----------------------------------train details------------------------------- -->
 
 <!-- first column -->
-
+<div class="loader">
+    <img src="loading.gif" alt="">
+</div>
 
 
 <div class="container mt-5 train_container">
@@ -334,27 +346,6 @@
 </div>
 
 
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
 <br>
 <br>
 <br>

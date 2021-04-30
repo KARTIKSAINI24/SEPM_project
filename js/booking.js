@@ -58,6 +58,15 @@ month[10] = "November";
 month[11] = "December";
 
 
+// swap button
+document.querySelector(".swap-button").addEventListener('click', function(){
+    var x= train_departure_station.value;
+    train_departure_station.value = train_arrival_station.value;
+    train_arrival_station.value = x
+
+})
+    
+
 
 // search tickets button
 search_tickets.addEventListener('click', (e)=>{
@@ -72,6 +81,11 @@ search_tickets.addEventListener('click', (e)=>{
     // alert.appendChild(document.createTextNode("Invlaid Input"))
     // //get parent
     // train_container = document.querySelector(".train_container")
+
+    //hide tickets if availble
+    for(var j=0; j< train_container.length ; j++){
+    train_container[j].style.display= "none";
+    }
     console.log('unvalid')
 
     e.preventDefault();
@@ -79,13 +93,22 @@ search_tickets.addEventListener('click', (e)=>{
 
 
     else{
+
+        //hiding tickets
+    for(var j=0; j< train_container.length ; j++){
+    train_container[j].style.display= "none";
+    }
+    //displaying loader
+    document.querySelector('.loader').style.display = 'block'
+    
+    setTimeout(hideloader, 1000)
     var d = new Date(departure_date_input.value)
     
     
     // displaying tickets
-    for(var j=0; j< train_container.length ; j++){
-    train_container[j].style.display= "block";
-    }
+    // for(var j=0; j< train_container.length ; j++){
+    // train_container[j].style.display= "block";
+    // }
     
 
     // entering date station name in dom
@@ -100,6 +123,13 @@ search_tickets.addEventListener('click', (e)=>{
 }
 })
 
+function hideloader(){
+    document.querySelector('.loader').style.display = 'none'
+    //displaying tickets
+    for(var j=0; j< train_container.length ; j++){
+    train_container[j].style.display= "block";
+    }
+}
 
 
 
@@ -107,13 +137,10 @@ search_tickets.addEventListener('click', (e)=>{
 
 
 
-// function loadTickets(){
-// {
-    // for(var j=0; j< train_container.length ; j++){
-    // train_container[j].style.display= "block";
-    // }
-// // }
-// // }
+
+
+
+
 
 
 

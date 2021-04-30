@@ -79,7 +79,10 @@
 
 /* **********************************   train details ****************************************/
 
-
+.loader{
+    text-align: center;
+    display:none;
+}
 
 .train_timing_row{
     margin: 0;
