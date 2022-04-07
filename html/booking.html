@@ -8,8 +8,7 @@
     <title>Booking</title>
 
 <!-- importing typed.js -->
-    <script src="typed.js-master/lib/typed.min.js"></script>
-
+  
 
 <!-- font links -->
 
@@ -79,7 +78,7 @@
                     </div>
                 </div> 
                 <div class="form-row">
-                    <div class="col-2 ml-4 mr-2">
+                    <div class="col-auto ml-4 mr-2">
                         <div class="input-group">
                         <select put type="text" class="form-control train_forms train_departure_station" required>
                             <option selected disabled value="">Select</option>
@@ -101,7 +100,7 @@
                     <div class="col-auto mx-2">
                     <button type="button" class="btn btn-light swap-button"><i class="fa fa-refresh" id=""></i></button>
                     </div>
-                     <div class="col-2 mx-2">
+                     <div class="col-auto mx-2">
                         <div class="input-group">
                         <select put type="text" class="form-control train_forms train_arrival_station" required>
                             <option selected disabled value="">Select</option>
@@ -125,7 +124,7 @@
                       
                         </div>
                     </div>
-                     <div class="col-2 mx-2">
+                     <div class="col-auto mx-2">
                         <div class="input-group">
                         <select type="text" class="form-control train_forms">
                             <option selected disabled value="">Train Type</option>
@@ -141,7 +140,23 @@
                         </div> -->
                         </div> 
                     </div>
-                     <div class="col-2 ml-2">
+                     <div class="col-auto mx-2">
+                        <div class="input-group">
+                        <select type="text" class="form-control train_forms">
+                            <option selected disabled value="">Preferred Coach</option>
+                            <option value="">1-4 (2ac)</option>
+                            <option value="">5-11(3ac)</option>
+                            <option value="">12-14(4ac non sleeper)</option>
+                            <option value="">15-20(non AC sleeper)</option>
+                            <option value="">21-24( non AC non sleeper)</option>
+                        </select>
+                        <!-- <div class="input-group-prepend">
+                        <span class="input-group-text fa fa-user fa-7x input_group_icons"  ></span>
+                            </div>   
+                        </div> -->
+                        </div> 
+                    </div>
+                     <div class="col-auto ml-2">
                         <div class="input-group">
                         <!-- <label for="">Travelling people</label> -->
                         <select put type="text" class="form-control train_forms" required>

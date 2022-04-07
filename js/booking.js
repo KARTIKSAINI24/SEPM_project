@@ -73,14 +73,6 @@ search_tickets.addEventListener('click', (e)=>{
 
     if( (train_departure_station.value == '' )|| (train_arrival_station.value =='') ||  (departure_date_input.value =='') ||(train_arrival_station.value == train_departure_station.value)){
 
-    // //create div    
-    // const alert = document.createElement('div')
-    // //add class
-    // alert.className = 'alert alert-danger'
-    // //add text
-    // alert.appendChild(document.createTextNode("Invlaid Input"))
-    // //get parent
-    // train_container = document.querySelector(".train_container")
 
     //hide tickets if availble
     for(var j=0; j< train_container.length ; j++){

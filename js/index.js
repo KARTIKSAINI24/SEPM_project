@@ -9,7 +9,7 @@ let typed = new Typed(".typing_locations", {
     loop: true,
   });
 
-// ************************************** signup/signin modal *****************************
+// ********************************* signup/signin modal *****************************
 
 // modal signup/signin
 var sign_up_modal = document.getElementsByClassName("signup")[0]
@@ -64,12 +64,11 @@ signup_switch.addEventListener("click", function(){
 var sign_up_booking = document.querySelector(".signup_btn_booking")
 var sign_in_booking = document.querySelector(".signin_btn_booking")
 
-// sign_up_booking.addEventListener("click",function(e){
-//     console.log("helll")
-//     window.location.replace('booking.html');
-//     e.preventDefault();
+sign_up_booking.addEventListener("click",function(e){
+    window.location.replace('booking.html');
+    e.preventDefault();
    
-// })
+})
 sign_in_booking.addEventListener("click",function(e){
     console.log("helll")
     window.location.replace('booking.html');

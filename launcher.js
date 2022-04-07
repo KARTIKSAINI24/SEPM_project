@@ -16,7 +16,7 @@ console.log(__dirname);
 app.use(bodyParser.urlencoded({
     extended:true
 }))
-mongoose.connect('mongodb://Localhost:27017/railwaydb',{
+mongoose.connect('mongodb://Localhost:27017/railwaydb2',{
     useNewUrlParser:true,useUnifiedTopology:true
 });
 
